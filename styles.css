@@ -6,19 +6,99 @@
 
 body {
   color: #414141;
+  padding: 5px;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 100px;
   font-family: cursive;
+  color: #CFB53B;
   text-align: center;
+  text-shadow: 2px 2px 2px #F0E68C;
 }
 
 p {
-  color: #414141;
-  font-size: 20px;
+  color: white;
+  font-size: 45px;
   text-align: center;
+  text-shadow: 2px 2px 2px purple;
 }
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.photo-grid2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.column {
+  float: left;
+  width: 6.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column2 {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column4 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row4::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+td {
+  padding: 10px 0;
+}
+
+h2 {
+  color: purple;
+  font-size: 36px;
+  font-family: cursive;
+  text-align: justify;
+}
+
 .menu-container {
   color: #fff;
   background-color: #5995DA;
@@ -34,22 +114,14 @@ p {
 
 .menu {
   border: 1px solid #fff;
-  width: 900px;
+  width: 1450px;
   display: flex;
   justify-content: space-around;
-
 }
 
-h2 {
-  font-size: 36px;
-  font-family: helvitica;
-  text-align: justify;
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen  {
   body {
-    background-color: #C8C6FA; /* Blue */
+    background-color: #C8C6FA;
   }
 }
 
@@ -59,9 +131,9 @@ h2 {
 }
 
 
-.travelheader
-{
-  color: #414141;
+.travelheader {
+  color: #CFB53B;
+  text-shadow: 2px 2px 2px #F0E68C;
 }
 
 .fashionheader
@@ -117,9 +189,8 @@ h2 {
 }
 
 .photo-grid-item {
-  border: 1px solid #fff;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .photo-grid {
@@ -127,4 +198,103 @@ h2 {
   flex-wrap: wrap;
   lign-self: flex-end;
   margin-bottom: 20px;
+}
+
+.travelarticleheader {
+  height: 200px;
+  align-items: center;
+}
+
+.travelarticle h1 {
+  font-size: 50px;
+  font-family: Apple Chancery;
+  line-height: 1.444;
+  letter-spacing: 0.2em;
+  color: silver;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.travelarticle h2 {
+  color: white;
+  font-size: 20px;
+    line-height: 1.857;
+    letter-spacing: 0.2em;
+    font-family: 'BemboStd';
+    text-transform: uppercase;
+}
+
+.travelarticle h2 {
+  text-align: center;
+}
+
+.travelarticle {
+  background-color: #F16D63;
+}
+
+
+.travelarticle p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: none;
+}
+
+.travelarticle p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.mirrors.jpeg {
+    max-width: 5%;
+    height: auto;
+    margin: 0 auto 2px auto;
+}
+
+.travelarticle h3{
+  color: black;
+  font-size: 11px;
+    line-height: 1.857;
+    letter-spacing: 0.2em;
+    font-family: 'BemboStd';
+    text-transform: uppercase;
+}
+
+.travelarticle h3 {
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+
+.duomo.jpeg {
+    margin-bottom: 36px;
+    image-align: center;
+}
+
+.travelarticle h4 {
+  color: black;
+  font-size: 11px;
+    line-height: 1.857;
+    letter-spacing: 0.2em;
+    font-family: 'BemboStd';
+    text-transform: uppercase;
+}
+
+.travelarticle h4{
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+
+
+.travelarticle body{
+  font-size: 18px;
+    line-height: 1.444;
+    letter-spacing: -0.02em;
+    font-family: 'BemboStd';
+    text-align: center;
+    color: #333233;
 }
